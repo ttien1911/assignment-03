@@ -1,0 +1,22 @@
+@media (max-width: 500px) {
+  #nav-bar,
+  #about,
+  #job-info,
+  #certificate,
+  #project,
+  #footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  #navbar ul {
+    display: block;
+  }
+  section > .container {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  #navbar ul li:nth-child(3) {
+    display: none;
+  }
+}

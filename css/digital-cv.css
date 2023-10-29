@@ -1,0 +1,136 @@
+.digital-cv {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgba(0, 85, 254, 0.825);
+}
+.digital-cv-timeline {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+.digital-cv-scopes {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.bg-white {
+  margin: 10px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.digital-cv h1 {
+  color: rgba(0, 85, 254, 0.825);
+  margin-top: 10px;
+  border-bottom: 2px solid rgb(225, 224, 224);
+}
+#goals {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 10px;
+}
+.icons {
+  font-size: 20px;
+  align-self: center;
+  justify-self: center;
+}
+#team {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: repeat(4, 50px);
+  grid-gap: 10px;
+}
+#scopes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px;
+  grid-gap: 15px;
+}
+#primary {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: repeat(2, 50px);
+  grid-gap: 10px;
+}
+#timeline {
+  display: grid;
+  grid-template-columns: 45px auto;
+  grid-template-rows: repeat(7, 50px);
+  grid-gap: 20px;
+}
+#timeline span {
+  border-radius: 75%;
+  background-color: rgb(156, 113, 241);
+  text-align: center;
+  padding-top: 12px;
+  font-size: 20px;
+  border: 2px solid gray;
+  color: white;
+}
+#timeline .content {
+  border-bottom: 1px dashed rgb(48, 177, 247);
+}
+/* mobile */
+
+@media (max-width: 500px) {
+  .digital-cv {
+    display: inline-block;
+  }
+  #goals,
+  #scopes,
+  #primary,
+  #timeline {
+    display: inline;
+    padding-bottom: 20px;
+  }
+  #team {
+    display: inline;
+  }
+  .icons {
+    font-size: 20px;
+    text-align: center;
+  }
+  #timeline span {
+    padding: 12px;
+  }
+  #timeline .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .digital-cv {
+    display: inline-block;
+  }
+  #goals,
+  #scopes,
+  #primary,
+  #timeline {
+    display: inline;
+    padding-bottom: 20px;
+  }
+  #team {
+    display: block;
+  }
+  .icons {
+    font-size: 20px;
+    text-align: center;
+  }
+  #timeline span {
+    padding: 12px;
+  }
+  #timeline .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
