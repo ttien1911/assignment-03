@@ -47,8 +47,8 @@ ul{
 #navbar img{
   position: absolute;
   height: 140px;
-  left: 660px;
-  top: 350px;
+  top: 50%;
+  left: 45%;
   border: 7px solid white;
   border-radius: 50%;
   
